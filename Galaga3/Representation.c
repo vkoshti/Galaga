@@ -55,19 +55,6 @@ bool loadTank(tank *t , char *path,SDL_Renderer *renderer)
 }
 
 
-SDL_Texture* loadBackground(SDL_Renderer *renderer)
-{
-    SDL_Texture *backtexture = NULL;
-    SDL_Surface *backgroundsurface = IMG_Load("resources/background.jpg");
-    if(backgroundsurface==NULL)
-    {
-        printf("Error while loading image : %s",IMG_GetError());
-        return NULL;
-    }
-    backtexture = SDL_CreateTextureFromSurface(renderer,backgroundsurface);
-    SDL_FreeSurface(backgroundsurface);
-    return backtexture;
-}
 
 
 void setUpScore(Score *score)
