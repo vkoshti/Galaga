@@ -45,5 +45,11 @@ typedef struct background
 bool loadRivals(rivals *,char *,SDL_Renderer *);
 bool loadTank(tank *,char *,SDL_Renderer *);
 bool setUpBullet(bullet *);
+SDL_Texture *loadBackground(SDL_Renderer *);
+void setUpScore(Score *);
+void updateRival1(rivals *,Score *);
+void updateRival2(rivals *,Score *);
+void moveRivals1(rivals *,Score *);
+void moveRivals2(rivals *,Score *);
 
 #endif // REPRESENTATION
